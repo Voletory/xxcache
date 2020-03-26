@@ -10,7 +10,15 @@
 
     <properties>
         <spring.version>5.2.5.RELEASE</spring.version>
+        <spring.boot.version>1.4.4.RELEASE</spring.boot.version>
         <spring.redis.version>1.8.0.RELEASE</spring.redis.version>
+        <cglib.version>3.2.5</cglib.version>
+        <fastjson.version>1.2.8</fastjson.version>
+        <slf4j.version>1.7.12</slf4j.version>
+        <commons-lang3.version>3.3</commons-lang3.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
+        <commons-beanutils.version>1.9.3</commons-beanutils.version>
+        <commons-codec.version>1.10</commons-codec.version>
     </properties>
     <dependencies>
         <!-- springframework -->
@@ -30,9 +38,61 @@
             <version>${spring.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>${spring.redis.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+            <version>${spring.boot.version}</version>
+        </dependency>
+
+        <!-- slf4j -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>${commons-beanutils.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- org ehcache -->
+        <dependency>
+            <groupId>org.ehcache</groupId>
+            <artifactId>sizeof</artifactId>
+            <version>0.3.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 

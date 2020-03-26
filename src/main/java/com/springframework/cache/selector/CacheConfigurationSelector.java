@@ -1,6 +1,7 @@
 package com.springframework.cache.selector;
 
 import com.springframework.cache.annotation.EnableCache;
+import com.springframework.cache.core.config.CacheConfiguration;
 import org.springframework.context.annotation.AdviceMode;
 import org.springframework.context.annotation.AdviceModeImportSelector;
 
@@ -11,6 +12,6 @@ import org.springframework.context.annotation.AdviceModeImportSelector;
 public class CacheConfigurationSelector extends AdviceModeImportSelector<EnableCache> {
     @Override
     protected String[] selectImports(AdviceMode adviceMode) {
-        return new String[0];
+        return new String[]{CacheConfiguration.class.getName()};
     }
 }
