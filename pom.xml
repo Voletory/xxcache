@@ -9,7 +9,7 @@
     <description>xxcache for springboot</description>
 
     <properties>
-        <spring.version>5.2.5.RELEASE</spring.version>
+        <spring.version>5.3.19</spring.version>
         <spring.boot.version>1.4.4.RELEASE</spring.boot.version>
         <spring.redis.version>1.8.0.RELEASE</spring.redis.version>
         <cglib.version>3.2.5</cglib.version>
