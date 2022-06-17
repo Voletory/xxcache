@@ -13,7 +13,7 @@
         <spring.boot.version>1.4.4.RELEASE</spring.boot.version>
         <spring.redis.version>1.8.0.RELEASE</spring.redis.version>
         <cglib.version>3.2.5</cglib.version>
-        <fastjson.version>1.2.8</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <slf4j.version>1.7.12</slf4j.version>
         <commons-lang3.version>3.3</commons-lang3.version>
         <commons-collections.version>3.2.2</commons-collections.version>
